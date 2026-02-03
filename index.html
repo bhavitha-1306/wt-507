@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Landing Page</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-[lightcoral] text-white p-5 text-center">
+    <h1 class="text-3xl font-bold">Welcome to Our Service</h1>
+    <p id="deviceType" class="mt-2 text-lg"></p>
+  </header>
+
+  <!-- Main -->
+  <main class="p-5 bg-gray-50">
+    <!-- Hero -->
+    <section id="hero" class="text-center mb-6 lg:text-left">
+      <h2 id="heroTitle" class="text-2xl mb-2 lg:text-4xl font-semibold">
+        Discover Our Solutions
+      </h2>
+      <p id="heroDescription" class="text-lg lg:text-xl">
+        We provide top-notch solutions tailored to your needs.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mb-6">
+      <h2 class="text-xl font-semibold mb-3">Features</h2>
+      <div id="featureList" class="flex flex-wrap gap-3">
+        <!-- JS inserts features -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+      <p class="mb-4">Get in touch with us for more information.</p>
+
+      <form id="contactForm" class="flex flex-col max-w-md gap-3">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="p-2 border rounded"
+        >
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="p-2 border rounded"
+        >
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          class="p-2 border rounded"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="mt-3 bg-[lightcoral] text-white py-2 rounded hover:bg-red-700"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-gray-800 text-white">
+    <p>&copy; 2024 Our Service</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
