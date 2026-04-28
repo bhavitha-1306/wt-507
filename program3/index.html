@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body class="bg-blue-200 min-h-screen flex flex-col">
+
+    <header class="bg-red-400 text-white text-center p-4 text-xl font-bold">
+        Welcome to Random Number Generator
+    </header>
+
+    <main class="flex flex-col items-center justify-center flex-grow gap-4 p-6">
+
+        <button onclick="generateRandomNumber()" class="bg-green-400 px-4 py-2 rounded hover:bg-green-500">
+            Generate Random Number
+        </button>
+
+        <div id="randomNumber" class="font-bold text-lg"></div>
+
+        <div class="space-x-3">
+
+            <button onclick="addItem()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Add Item
+            </button>
+
+            <button onclick="removeItem()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                Remove Item
+            </button>
+
+        </div>
+
+        <ul id="itemList" class="list-disc mt-4 text-lg"></ul>
+
+    </main>
+
+    <footer class="bg-red-400 text-white text-center p-3">
+        © 2025 Random Number Generator
+    </footer>
+
+</body>
+
+</html>

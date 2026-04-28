@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Async Data Fetching</title>
+
+<link rel="stylesheet" href="output.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body class="bg-blue-200 min-h-screen flex flex-col">
+
+<header class="bg-red-400 text-white text-center p-4 text-xl font-bold">
+Asynchronous Data Fetching
+</header>
+
+<main class="flex flex-col items-center p-6 flex-grow">
+
+<div id="loading" class="text-lg font-bold mb-4">
+Loading...
+</div>
+
+<table class="border border-gray-400 bg-white shadow-lg">
+
+<thead class="bg-gray-200">
+<tr>
+<th class="border px-6 py-2">ID</th>
+<th class="border px-6 py-2">Name</th>
+<th class="border px-6 py-2">Email</th>
+</tr>
+</thead>
+
+<tbody id="dataBody"></tbody>
+
+</table>
+
+</main>
+
+<footer class="bg-red-400 text-white text-center p-3">
+© 2025 Async Data Fetching
+</footer>
+
+</body>
+</html>
